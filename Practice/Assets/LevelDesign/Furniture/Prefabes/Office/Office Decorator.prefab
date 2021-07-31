@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4116654852403882850
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6460811537020551088}
+  - component: {fileID: 258654707902658301}
+  m_Layer: 0
+  m_Name: Office Decorator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6460811537020551088
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4116654852403882850}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.718689, y: 7.7783203, z: -10.029785}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &258654707902658301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4116654852403882850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b443e17bf319eb348a6c52c0d2a40ee0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  decors:
+  - {fileID: 8741005292346176315, guid: f6d4745ebbc36cd4da5976d034100964, type: 3}
+  - {fileID: 1394653628954947919, guid: 490bb71f3008d2845a2466d136a0eabe, type: 3}
+  - {fileID: 5655260551339989523, guid: 6a95eedba80b9704d96a85ee69a8dc5d, type: 3}
+  - {fileID: 5272825573532170111, guid: baf51c63c88cbf2408714258ac8cc6d7, type: 3}
+  - {fileID: 0}
