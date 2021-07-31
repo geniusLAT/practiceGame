@@ -473,7 +473,15 @@ public class EnemyManager : MonoBehaviour
         {
             cells.AddRange(room.RoomCells);
         }
-        Architector.Cell[] celAr = cells.ToArray();
+        List<Architector.Cell> GoodCells = new List<Architector.Cell>();
+        foreach (Architector.Cell cell in cells)
+        {
+            if (cell.busy == null)
+            {
+                GoodCells.Add(cell);
+            }
+        }
+        Architector.Cell[] celAr = GoodCells.ToArray();
         while (Score > 0)
         {
             Score -= 20;

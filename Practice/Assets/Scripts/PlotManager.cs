@@ -25,6 +25,10 @@ public class PlotManager : MonoBehaviour
         float likeliness = Random.Range(0, 100);
         Player = levelManager.player.gameObject;
         source = GetComponent<AudioSource>();
+        if (Task != null)
+        {
+            StopCoroutine(Task);
+        }
         Task = StartCoroutine(WaitOverKill());
 
     }
