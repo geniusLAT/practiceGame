@@ -352,6 +352,7 @@ public class EnemyManager : MonoBehaviour
     public void Spawn(Vector3 place, int gunNumber)
     {
         GameObject guy= Instantiate(enemyPref, place, new Quaternion());
+        guy.transform.Rotate(0, Random.Range(0f, 360f), 0);
         //guy.GetComponent<Enemy>().enemyManager = this;
         if ((gunNumber > -1) && (gunNumber < gunPrefs.Length))
         {

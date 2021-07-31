@@ -35,6 +35,7 @@ public class PlotManager : MonoBehaviour
 
     IEnumerator WaitOverKill()
     {
+        
         source.clip = audios[0]; source.Play();
         GameObject van = Instantiate(MinivanPref);
         Minivan minivan = van.GetComponent<Minivan>();
@@ -42,9 +43,10 @@ public class PlotManager : MonoBehaviour
         van.transform.Rotate(new Vector3(0, 45));
         Player.GetComponent<PlayerControl>().Freedom = Player.GetComponent<PlayerControl>().CursorLook = false;
         Player.transform.position = minivan.Inside.transform.position;
-        
+        yield return new WaitForSeconds(0.1f);
 
-        
+
+
         yield return new WaitForSeconds(0.1f);
         yield return minivan.OpenDoors();
         yield return minivan.CloseDoors();
